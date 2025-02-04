@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/login.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Register</h1>
+      <div class="row">
+        <label for="user_id">enter your new username</label>
+        <input type="text" name="user_id" id="user_id" value="">
+      </div>
+      <div class="row">
+        <label for="password">enter your new password</label>
+        <input type="text" name="password" id="password" value="">
+      </div>
+      <button type="button" name="button" onclick = "completeRegistration()">Register</button>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      function completeRegistration(){
+        const userId = $("#user_id").val();
+        const password = $("#password").val();
+        if (userId && password) {
+          alert("registration valid.");
+          window.open("login.html","_blank","height= 500, width = 400");
+          window.close();
+        }
+        else {
+          alert("please fill out both fields.")
+        }
+      }
+    </script>
+  </body>
+</html>
