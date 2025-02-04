@@ -1,0 +1,66 @@
+<script>
+  function openWin() {
+    window.open("1.html");
+  }
+</script>
+
+<form>
+  <input type="button" value="Open Window" onclick="openWin()"></form>
+
+body{
+  background-color: #ccc5b9;
+  margin: auto;
+  color: #fffcf2;
+  font-family: monospace;
+}
+header{
+  background-color: #403d39;
+  margin: auto;
+  font-family: serif;
+  z-index: 1000;
+  position:fixed;
+  height: auto;
+  width: 100%;
+  padding: 35px;
+  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.5);
+}
+nav{
+  display:inline;
+}
+h1{
+  margin: auto;
+  display: inline-flex;
+  font-size: 32pt;
+}
+main{
+  padding-top: 120px;
+  padding-bottom: 30px;
+}
+a {
+  background-color: #ccc5b9;
+  padding: 15px;
+  border-radius: 3px;
+  border-color: ##fffcf2;
+  border-style: inset;
+}
+p {
+  background-color: #fffcf2;
+  color: #252422;
+  padding: 15px
+}
+.contact-form{
+  display: block;
+  background-color: #403d39;
+  padding: 100px;
+}
+.form-row {
+    margin-bottom: 10px;
+}
+
+.form-input {
+    display: block;
+}
+
+.form-error {
+    color: red;
+}
